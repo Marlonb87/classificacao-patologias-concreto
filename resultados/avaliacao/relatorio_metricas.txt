@@ -1,0 +1,25 @@
+RELATÓRIO DE AVALIAÇÃO — ResNet-18 Fine-tuning
+=======================================================
+
+Acurácia Global (val set): 93.33%
+
+Nota: acurácia medida em imagens NUNCA vistas durante treino.
+Augmentation aplicada APENAS no treino (on-the-fly).
+
+Classification Report:
+               precision    recall  f1-score   support
+
+     corrosao     0.9000    0.9000    0.9000        10
+desplacamento     0.9000    0.9000    0.9000        10
+      fissura     1.0000    1.0000    1.0000        10
+
+     accuracy                         0.9333        30
+    macro avg     0.9333    0.9333    0.9333        30
+ weighted avg     0.9333    0.9333    0.9333        30
+
+
+Matriz de Confusão (linhas=real, colunas=predito):
+	corrosao	desplacamento	fissura
+corrosao	9	1	0
+desplacamento	1	9	0
+fissura	0	0	10
